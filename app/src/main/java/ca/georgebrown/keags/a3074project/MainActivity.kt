@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             _3074ProjectTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Search(
+                    Create(
 
                         modifier = Modifier.padding(innerPadding)
                     )
@@ -51,15 +51,16 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Create(name: String, modifier: Modifier = Modifier) {
+fun Create( modifier: Modifier = Modifier) {
     var getName by rememberSaveable { mutableStateOf("") }
     var location by rememberSaveable { mutableStateOf("") }
     var rating by rememberSaveable { mutableStateOf("") }
     var notes by rememberSaveable { mutableStateOf("") }
 
     Column(modifier = Modifier.fillMaxSize(),
-        horizontalAlignment = Alignment.CenterHorizontally, // Cross-axis centering
-        verticalArrangement = Arrangement.Center){
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.SpaceEvenly// Cross-axis centering
+       ){
         Spacer(modifier.height(50.dp))
         Text(
             text= "Add New Entry",
@@ -89,6 +90,7 @@ fun Create(name: String, modifier: Modifier = Modifier) {
                 modifier = Modifier.width(200.dp).height(50.dp),
             )
         }
+
         Row(){
             Text(
                 text="Rating: "
