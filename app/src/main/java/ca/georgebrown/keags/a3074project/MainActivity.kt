@@ -7,8 +7,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import ca.georgebrown.keags.a3074project.screens.SearchScreen
+import ca.georgebrown.keags.a3074project.screens.Edit
 import ca.georgebrown.keags.a3074project.ui.theme._3074ProjectTheme
 
 class MainActivity : ComponentActivity() {
@@ -26,11 +29,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-//@Preview(showBackground = true)
-//@Composable
-//fun GreetingPreview() {
-//    _3074ProjectTheme {
-//        Details()
-//    }
-//}
