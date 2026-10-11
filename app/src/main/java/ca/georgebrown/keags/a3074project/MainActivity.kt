@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import ca.georgebrown.keags.a3074project.screens.SearchScreen
+import ca.georgebrown.keags.a3074project.screens.DirectionListScreen
 import ca.georgebrown.keags.a3074project.ui.theme._3074ProjectTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             _3074ProjectTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    SearchScreen(
+                    DirectionListScreen(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -26,11 +26,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-//@Preview(showBackground = true)
-//@Composable
-//fun GreetingPreview() {
-//    _3074ProjectTheme {
-//        Details()
-//    }
-//}
